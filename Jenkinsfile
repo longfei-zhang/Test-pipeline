@@ -8,6 +8,7 @@ metadata:
   labels:
     some-label: some-label-value
 spec:
+  nodeSelector: openstack-control-plane: enabled
   containers:
   - name: maven
     image: maven:alpine
